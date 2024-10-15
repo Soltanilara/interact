@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation">
+    <meta property="og:title" content="InterACT" />
+    <meta property="og:description" content="Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation"/>
+    <meta property="og:url" content="https://soltanilara.github.io/interact/" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="InterACT">
+    <meta name="twitter:description" content="Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Bimanual Manipulation, Imitation Learning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>InterACT</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-fullhd">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a target="_blank" href="https://andrewcwlee.github.io/">Andrew Lee</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a target="_blank" href="https://ian-chuang.github.io/">Ian Chuang</a><sup>1,2</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a target="_blank" href="https://www.linkedin.com/in/ling-yuan-chen-b7b14a226/">Ling-Yuan Chen</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a target="_blank" href="https://soltanilab.engineering.ucdavis.edu/people/iman-soltani">Iman Soltani</a><sup>1</sup>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>University of California, Davis </span>
+                            <span class="author-block"><sup>2</sup>University of California, Berkeley</span>
+                            
+                        </div>
+
+                        <br>
+                        <p style="font-size: 1.2em; font-weight:bold; color:green;">8th Conference on Robot Learning (CoRL 2024), Munich, Germany</p>
+                        <br>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                                    <a href="https://www.arxiv.org/pdf/2409.07914" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="/" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code (coming soon)</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                                    <a href="https://www.arxiv.org/abs/2409.07914" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Teaser -->
+    <!-- <section class="hero teaser">
+        <div class="container is-fullhd">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered  is-centered">
+                        <div class="publication-video">
+                            <iframe src="https://www.youtube.com/embed/DwJzdaKM4N0" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        </br>
+                    </div>
+                    <br>
+                    <h2 class="subtitle has-text-centered">
+                        <span class="dperact">We introduce <b>AV-ALOHA</b>, a bimanual robot system with <b>7-DoF active
+                                vision</b> that is an extension of <a href="https://aloha-2.github.io/">ALOHA 2</a>.
+                            This system offers an immersive teleoperation experience using VR and serves as a platform
+                            to evaluate active vision in imitation learning and manipulation.</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Bimanual manipulation presents unique challenges compared to unimanual tasks due to the complexity of coordinating two robotic arms. In this paper, we introduce InterACT: Inter-dependency aware Action Chunking with Hierarchical Attention Transformers, a novel imitation learning framework designed specifically for bimanual manipulation. InterACT leverages hierarchical attention mechanisms to effectively capture inter-dependencies between dual-arm joint states and visual inputs. The framework comprises a Hierarchical Attention Encoder, which processes multi-modal inputs through segment-wise and cross-segment attention mechanisms, and a Multi-arm Decoder that refines individual action predictions by providing the other arm's intermediate output as context via synchronization blocks. Our experiments, conducted on various simulated and real-world bimanual manipulation tasks, demonstrate that InterACT outperforms existing methods. Detailed ablation studies further validate the significance of key components, including the impact of CLS tokens, cross-segment encoders, and synchronization blocks on task performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- System Diagram -->
+    <section class="section hero">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">InterACT</h2>
+
+                    <img src="static/images/encoder_decoder.png" class="interpolation-image" />
+                    <br />
+                    <br />
+
+                    <div class="content has-text-justified">
+
+                        <p>
+                            The Hierarchical Attention Encoder consists of multiple blocks of segment-wise encoders and cross-segment encoder. The output is passed through the Multi-arm Decoder which consists of Arm1 and Arm2 specific decoders that process the input segments independently. The synchronization block allows for information sharing between the two decoders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Diagram -->
+    <!-- <section class="section hero">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">AV-ALOHA</h2>
+
+                    <img src="static/images/ActiveVisionSystemFigure.png" class="interpolation-image" />
+                    <br />
+                    <br />
+
+                    <div class="content has-text-justified">
+
+                        <p>
+                            The AV-ALOHA system enables intuitive data collection using a VR headset for AV and either
+                            VR controllers or leader arms for manipulation. This helps capture full body and head
+                            movements to teleoperate both our real and simulation system that record video from six
+                            different cameras and provide training data for our AV imitation learning policies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="section hero">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Results</h2>
+                    <img src="static/images/results.png" class="interpolation-image" />
+                    <br />
+                    <br />
+
+                    <div class="content has-text-justified">
+
+                        <p>
+                            Success rate (%) for tasks adapted from <a href="https://tonyzhaozh.github.io/aloha/">ACT</a> (top) and our original tasks (bottom). For the simulation tasks, the data used to train the model came from human demonstrations, and we averaged the results across 3 random seeds with 50 episodes each. The real-world tasks were also evaluated over 50 episodes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Autonomous Rollouts</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <video poster="" id="video1" autoplay controls muted loop height="100%">\
+                            <!-- Your video file here -->
+                            <source src="static/videos/insert_plug.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Insert plug
+                        </h2>
+                    </div>
+                    <div class="item item-video2">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%">
+                            <!-- Your video file here -->
+                            <source src="static/videos/click_pen.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Click Pen
+                        </h2>
+                    </div>
+                    <div class="item item-video3">
+                        <video poster="" id="video3" autoplay controls muted loop height="100%">\
+                            <!-- Your video file here -->
+                            <source src="static/videos/sweep.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Sweep
+                        </h2>
+                    </div>
+                    <div class="item item-video4">
+                        <video poster="" id="video4" autoplay controls muted loop height="100%">
+                            <!-- Your video file here -->
+                            <source src="static/videos/unscrew_cap.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Unscrew cap
+                        </h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End video carousel -->
+
+    <!-- Video carousel -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Attention weights of CLS tokens over time</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <video poster="" id="video1" autoplay controls muted loop height="100%">
+                            <!-- Your video file here -->
+                            <source src="static/videos/sim_peg.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Insert Peg
+                        </h2>
+                    </div>
+                    <div class="item item-video2">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%">
+                            <!-- Your video file here -->
+                            <source src="static/videos/sim_transfer.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Transfer Cube
+                        </h2>
+                    </div>
+                    <div class="item item-video5">
+                        <video poster="" id="video5" autoplay controls muted loop height="100%">\
+                            <!-- Your video file here -->
+                            <source src="static/videos/sim_slot.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="subtitle has-text-centered">
+                            Slot Insertion
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End video carousel -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{lee2024interact,
+    title={InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation},
+    author={Lee, Andrew and Chuang, Ian and Chen, Ling-Yuan and Soltani, Iman},
+    journal={arXiv preprint arXiv:2409.07914},
+    year={2024}
+}</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            Website template borrowed from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, <a href="https://nerfies.github.io" target="_blank">Nerfies</a> and <a href="https://soltanilara.github.io/av-aloha" target="_blank">AV-ALOHA</a>.
+                            <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
